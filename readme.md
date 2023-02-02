@@ -9,8 +9,7 @@ rm -rf ~/.config/nvim
 ```
 2. Clone this repository 
 ```shell
-# Switch your current working directory to your now Clear
-# Neovim configuration directory
+# Switch your current working directory to your now Clear Neovim configuration directory
 cd ~/.config/nvim
 # Clone into the current directory (note the usage of the trailing period)
 git clone https://github.com/croutledge/neovim.git . 
