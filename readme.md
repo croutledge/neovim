@@ -31,6 +31,9 @@ git clone https://github.com/croutledge/neovim.git .
 
 # Plugins
 
+## WhichKey
+A popup that can show you available keybindings if you're unsure of what command you're trying to enter
+
 ## Bufferline
 Bufferline adds familar tabs to Neovim so that each buffer you have open acts just like an open file would in VSCode
 
@@ -48,6 +51,9 @@ This provides a familiar visual debug experience during a debug session (like ca
 
 ## Fugitive
 Do everything you can do with git in the shell but with Vim commands or keybindings
+
+## Vim Surround
+Handy bindings to add/modify/delete characters surrounding words, blocks of text or selections in Visual mode
 
 ## Harpoon
 Picked this one up from the internet, handy way to pin or favorite specific files so you can get back to them quickly
