@@ -31,56 +31,56 @@ git clone https://github.com/croutledge/neovim.git .
 
 # Plugins
 
-## WhichKey
-A popup that can show you available keybindings if you're unsure of what command you're trying to enter
+## [WhichKey](WhichKey)
+A popup that can show you available keybindings and their descriptions if you're unsure of what command you're trying to enter
 
-## Bufferline
+## [Bufferline](Bufferline)
 Bufferline adds familar tabs to Neovim so that each buffer you have open acts just like an open file would in VSCode
 
-## Colors
+## [Colors](Colors)
 Simply here to add theming
 
-## Comment
+## [Comment](Comment)
 Handy commands for various vim modes to comment code
 
-## DAP
+## [DAP](DAP)
 This is the primary component that provides debug support using the same system used by VSCode. Comes with configurations that generally work for most Mocha and Jest tests too in addition to regular JS/TS files
 
-## DAP UI
+## [DAP UI](DAP UI)
 This provides a familiar visual debug experience during a debug session (like call stack, watch and output windows)
 
-## Fugitive
+## [Fugitive](Fugitive)
 Do everything you can do with git in the shell but with Vim commands or keybindings
 
-## Vim Surround
+## [Vim Surround](Vim Surround)
 Handy bindings to add/modify/delete characters surrounding words, blocks of text or selections in Visual mode
 
-## Harpoon
+## [Harpoon](Harpoon)
 Picked this one up from the internet, handy way to pin or favorite specific files so you can get back to them quickly
 
-## Lualine
+## [Lualine](Lualine)
 Enhanced per-buffer information about an open file
 
-## Zero LSP (LSP)
+## [Zero LSP (LSP)](Zero LSP (LSP))
 Everything involved with intellisense, code diagnostics and code fixes (lint, prettier etc)
 
-## Nvim Tree
+## [Nvim Tree](Nvim Tree)
 A file explorer
 
-## Telescope
+## [Telescope](Telescope)
 Provides ways to find files or things in files within your current working directory/project (much like Ctrl+P or Ctrl+Shift+P)
 
-## Toggleterm
+## [Toggleterm](Toggleterm)
 Quick access to your shell/terminal/commandline from within Neovim - no need to jump out to a different windows
 
-## Treesitter
+## [Treesitter](Treesitter)
 Supports various other plugins and provides better syntax highlighting
 
-## Undotree
+## [Undotree](Undotree)
 Visually see and navigate through your document changes visually
 
-## Vimtest
+## [Vimtest](Vimtest)
 Primarily used to RUN whole files or tests nearest to your cursor in non-Debug modes
 
-## Vimwiki
+## [Vimwiki](Vimwiki)
 Instead of yet-another app to structure and take notes Vimwiki can be accessed and navigated from within Vim at any point
