@@ -17,18 +17,29 @@ lsp.ensure_installed({
 
 local cmp = require('cmp')
 local cmp_select = { behavior = cmp.SelectBehavior.Select }
-local cmp_mappings = lsp.defaults.cmp_mappings({
+lsp.defaults.cmp_mappings({
 	['<C-b>'] = cmp.mapping.select_prev_item(cmp_select),
 	['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
 	['<C-y>'] = cmp.mapping.confirm({ select = true }),
   ['<C-k>'] = cmp.mapping(cmp.mapping.complete(), { 'i', 'c' })
 })
 
+-- local completionIcons = {
+--   Text = "",
+--   Variable = "",
+--   Snippet = "",
+--   Field = "",
+--   Method = "",
+--   Function = "",
+--   Class = "",
+--   Enum = "ﴵ"
+-- }
+
 cmp.setup({
   sources = {
     {
       name = "nvim_lsp",
-      entry_filter = function(entry, ctx)
+      entry_filter = function(entry, _)
         local kind = types.lsp.CompletionItemKind[entry:get_kind()]
         -- Intentionally not suggesting whatever text it finds in the file
         -- Personally I find that annoying
@@ -52,8 +63,7 @@ lsp.set_preferences({
 -- :help vim.lsp.*
 -- For preconfigured keybindings go to:
 -- See: https://github.com/neovim/nvim-lspconfig
-lsp.on_attach(function (client, bufnr)
-	local opts = {buffer = bufnr, remap = false}
+lsp.on_attach(function (_, bufnr)
 	-- The only reason these are specified here is to
   -- make these available even if there's not a supporting lsp for the current buffer
 	-- so that Vim will do a best attempt regardless
