@@ -1,6 +1,6 @@
 # Goals
 
-This Neovim configuration is a novice attempt at creating a familiar development experience for various languages however it is especially tailored to JS/TS/React development.
+This Neovim configuration is a novice attempt at creating a familiar development experience one would see in VSCode for various languages however it is especially tailored to JS/TS/React development.
 
 # Installation
 
