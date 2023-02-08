@@ -47,8 +47,7 @@ return require("packer").startup(function(use)
 
   -- Improve NeoVIMS ability to highlight code
   -- by hooking into VIM features around parsing
-  use {
-    "nvim-treesitter/nvim-treesitter",
+  use { "nvim-treesitter/nvim-treesitter",
     {
       run = ":TSUpdate"
     }
@@ -76,26 +75,14 @@ return require("packer").startup(function(use)
   -- Can configure it for lots of various languages
   -- see the specific plugin config for more
   -- See /after/plugin/lsp.lua
-  use {
-	  "VonHeikemen/lsp-zero.nvim",
-	  requires = {
-		  -- LSP Support
-		  {"neovim/nvim-lspconfig"},
-		  {"williamboman/mason.nvim"},
-		  {"williamboman/mason-lspconfig.nvim"},
-
-		  -- Autocompletion
-		  {"hrsh7th/nvim-cmp"},
-		  {"hrsh7th/cmp-buffer"},
-		  {"hrsh7th/cmp-path"},
-		  {"saadparwaiz1/cmp_luasnip"},
-		  {"hrsh7th/cmp-nvim-lsp"},
-		  {"hrsh7th/cmp-nvim-lua"},
-
-		  -- Snippets
-		  {'L3MON4D3/LuaSnip'}
-	  }
-  }
+  use { 'hrsh7th/nvim-cmp' }
+  use { 'williamboman/mason.nvim' }
+  use { 'williamboman/mason-lspconfig.nvim' }
+  use { 'neovim/nvim-lspconfig' }
+  use { 'hrsh7th/cmp-nvim-lsp' }
+  use { 'hrsh7th/cmp-nvim-lsp-signature-help' }
+  use { 'dcampos/nvim-snippy' }
+  use { 'dcampos/cmp-snippy' }
 
   -- Configure a better status line for NeoVIM
   -- See /after/plugin/lualine.lua

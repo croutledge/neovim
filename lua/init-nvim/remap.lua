@@ -36,6 +36,9 @@ vim.keymap.set("n", "Q", "<nop>")
 -- vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
 -- vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
 
+-- Close evrything and exit (with extra umph)
+vim.keymap.set("n", "<leader>qq", ":bufdo q!<CR>", { silent=true, desc="Close all and exit" });
+
 -- Less keystrokes to navigate splits
 vim.keymap.set("n", "<C-h>", "<C-w><C-h>", { silent=true, desc="Move to Left Window" });
 vim.keymap.set("n", "<C-j>", "<C-w><C-j>", { silent=true, desc="Move down a Window" });

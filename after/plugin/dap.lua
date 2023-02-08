@@ -62,7 +62,7 @@ for _, language in ipairs({ "typescript", "javascript" }) do
       -- trace = true, -- include debugger info
       runtimeExecutable = "node",
       runtimeArgs = {
-        "./node_modules/mocha/bin/mocha.js",
+        "./node_modules/mocha/bin/mocha",
       },
       rootPath = "${workspaceFolder}",
       cwd = "${workspaceFolder}",
@@ -76,7 +76,7 @@ for _, language in ipairs({ "typescript", "javascript" }) do
       -- trace = true, -- include debugger info
       runtimeExecutable = "node",
       runtimeArgs = {
-        "./node_modules/mocha/bin/mocha.js",
+        "./node_modules/mocha/bin/mocha",
         "${file}",
       },
       rootPath = "${workspaceFolder}",
