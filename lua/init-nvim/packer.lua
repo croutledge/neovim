@@ -81,8 +81,11 @@ return require("packer").startup(function(use)
   use { 'neovim/nvim-lspconfig' }
   use { 'hrsh7th/cmp-nvim-lsp' }
   use { 'hrsh7th/cmp-nvim-lsp-signature-help' }
-  use { 'dcampos/nvim-snippy' }
-  use { 'dcampos/cmp-snippy' }
+  use {
+    "L3MON4D3/LuaSnip"
+  }
+  use { 'saadparwaiz1/cmp_luasnip' }
+  use { 'rafamadriz/friendly-snippets' }
 
   -- Configure a better status line for NeoVIM
   -- See /after/plugin/lualine.lua
