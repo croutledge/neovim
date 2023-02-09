@@ -1,3 +1,4 @@
+---@diagnostic disable: undefined-global
 local function shortVimMode()
   local mode = string.upper(vim.api.nvim_get_mode().mode)
   if mode == 'N' then

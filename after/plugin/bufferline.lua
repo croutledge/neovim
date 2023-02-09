@@ -1,3 +1,4 @@
+---@diagnostic disable: undefined-global
 require("bufferline").setup({
   options = {
     diagnostics = "nvim_lsp",

@@ -1,3 +1,4 @@
+---@diagnostic disable: undefined-global
 require("toggleterm").setup{
   size = 30
 }

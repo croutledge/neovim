@@ -1,3 +1,4 @@
+---@diagnostic disable: undefined-global
 vim.g.vimwiki_list = {
   {
      path = '/home/cory/Documents/vimwiki',

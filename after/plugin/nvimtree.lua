@@ -1,3 +1,4 @@
+---@diagnostic disable: undefined-global
 require("nvim-tree").setup({
   disable_netrw = true,
   hijack_netrw = true,
