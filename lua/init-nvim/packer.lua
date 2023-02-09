@@ -69,6 +69,7 @@ return require("packer").startup(function(use)
   -- needing to always have a separate
   -- See /after/plugin/fugitive.lua
   use { "tpope/vim-fugitive" }
+  use { "lewis6991/gitsigns.nvim" }
 
   -- The whole apparatus for supporting working with code
   -- Includes intellisense, code actions etc
@@ -80,6 +81,7 @@ return require("packer").startup(function(use)
   use { 'williamboman/mason-lspconfig.nvim' }
   use { 'neovim/nvim-lspconfig' }
   use { 'hrsh7th/cmp-nvim-lsp' }
+  use { 'hrsh7th/cmp-path' }
   use { 'hrsh7th/cmp-nvim-lsp-signature-help' }
   use {
     "L3MON4D3/LuaSnip"

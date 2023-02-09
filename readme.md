@@ -87,3 +87,6 @@ Instead of yet-another app to structure and take notes Vimwiki can be accessed a
 
 ## [Vim Signature](https://github.com/kshenoy/vim-signature)
 Helper to add gutter indicators for marks
+
+## [Gitsigns](https://github.com/lewis6991/gitsigns.nvim)
+Indicate changes noticed by Git in the gutter
