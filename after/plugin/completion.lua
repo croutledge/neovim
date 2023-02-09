@@ -10,9 +10,66 @@ local has_words_before = function()
 
 end
 
+local lspkind = require('lspkind')
+
+require('lspkind').init({
+    mode = 'symbol_text',
+    preset = 'codicons',
+    symbol_map = {
+      Text = "",
+      Method = "",
+      Function = "",
+      Constructor = "",
+      Field = "ﰠ",
+      Variable = "",
+      Class = "ﴯ",
+      Interface = "",
+      Module = "",
+      Property = "ﰠ",
+      Unit = "塞",
+      Value = "",
+      Enum = "",
+      Keyword = "",
+      Snippet = "",
+      Color = "",
+      File = "",
+      Reference = "",
+      Folder = "",
+      EnumMember = "",
+      Constant = "",
+      Struct = "פּ",
+      Event = "",
+      Operator = "",
+      TypeParameter = ""
+    },
+})
+
 cmp.setup({
+  window = {
+    documentation = {
+      border = {'┌', '─', '┐', '│', '┘', '─', '└', '│'},
+    },
+    completion = {
+      winhighlight = "Normal:Pmenu,FloatBorder:Pmenu,Search:None",
+      col_offset = -3,
+      side_padding = 0,
+      border = {'┌', '─', '┐', '│', '┘', '─', '└', '│'},
+    },
+  },
+  formatting = {
+    fields = { "kind", "abbr", "menu" },
+    format = function(entry, vim_item)
+      local kind = require("lspkind").cmp_format({ mode = "symbol_text", maxwidth = 50 })(entry, vim_item)
+      local strings = vim.split(kind.kind, "%s", { trimempty = true })
+      kind.kind = " " .. (strings[1] or "") .. " "
+      kind.menu = "    [" .. (strings[2] or "") .. "]"
+
+      return kind
+    end,
+  },
   mapping = {
     ["<CR>"] = cmp.mapping.confirm({ select = true }),
+    ['<C-k>'] = cmp.mapping(cmp.mapping.complete(), { 'i', 'c' }),
     ["<Tab>"] = cmp.mapping(function(fallback)
       if cmp.visible() then
         cmp.select_next_item()
