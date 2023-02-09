@@ -127,7 +127,7 @@ return require("packer").startup(function(use)
   }
 
   use { "vim-test/vim-test" }
-
+  use { "kshenoy/vim-signature" }
   use { "vimwiki/vimwiki" }
 
   use {

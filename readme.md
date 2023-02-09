@@ -84,3 +84,6 @@ Primarily used to RUN whole files or tests nearest to your cursor in non-Debug m
 
 ## [Vimwiki](https://github.com/vimwiki/vimwiki)
 Instead of yet-another app to structure and take notes Vimwiki can be accessed and navigated from within Vim at any point
+
+## [Vim Signature](https://github.com/kshenoy/vim-signature)
+Helper to add gutter indicators for marks
