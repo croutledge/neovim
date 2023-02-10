@@ -8,7 +8,7 @@ require('mason-lspconfig').setup({
     'dockerls',
     'bashls',
     'html',
-    'pylsp',
+    'pyright',
     'yamlls',
     'sumneko_lua'
   }
