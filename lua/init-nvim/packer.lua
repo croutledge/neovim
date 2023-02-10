@@ -143,4 +143,5 @@ return require("packer").startup(function(use)
   }
 
   use { "tpope/vim-surround" }
+  use { "ggandor/leap.nvim" }
 end)
