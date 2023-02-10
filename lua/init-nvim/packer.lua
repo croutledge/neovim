@@ -103,6 +103,7 @@ return require("packer").startup(function(use)
   -- Better context aware commenting of code
   use { "numToStr/Comment.nvim" }
 
+  -- Access to your terminal from within Neovim
   use {
     "akinsho/toggleterm.nvim",
     tag = '*',
@@ -111,6 +112,7 @@ return require("packer").startup(function(use)
     end
   }
 
+  -- Debugging
   use {
     "mfussenegger/nvim-dap",
     requires = {
@@ -124,15 +126,22 @@ return require("packer").startup(function(use)
      }
     }
 
+  -- A familiar debugging interface
   use {
     "rcarriga/nvim-dap-ui",
     requires = {"mfussenegger/nvim-dap"}
   }
 
+  -- Being able to run all or some tests with simple keybindings
   use { "vim-test/vim-test" }
+
+  -- Helper to visually see where you've placed marks
   use { "kshenoy/vim-signature" }
+
+  -- Note taking whenever you need it
   use { "vimwiki/vimwiki" }
 
+  -- Helper for when you forget or are exploring options for keybindings
   use {
     "folke/which-key.nvim",
     config = function()
@@ -142,6 +151,10 @@ return require("packer").startup(function(use)
     end
   }
 
+  -- Surround objects and visual selections with your choice of characters
+  -- with minimal key presses
   use { "tpope/vim-surround" }
+
+  -- Navigate faster to where you want to go
   use { "ggandor/leap.nvim" }
 end)
