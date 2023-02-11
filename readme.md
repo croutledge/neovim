@@ -68,9 +68,10 @@ Primarily used to RUN whole files or tests nearest to your cursor in non-Debug m
 
 ## Git
 
-### [Fugitive](https://github.com/tpope/vim-fugitive)
-Do everything you can do with git in the shell but with Vim commands or keybindings
-  
+### [LazyGit](https://github.com/kdheepak/lazygit.nvim)
+Because I'm lazy and dont like vim as merge tool
+* MUST INSTALL: https://github.com/jesseduffield/lazygit
+
 ### [Gitsigns](https://github.com/lewis6991/gitsigns.nvim)
 Indicate changes noticed by Git in the gutter
 

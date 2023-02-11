@@ -65,10 +65,11 @@ return require("packer").startup(function(use)
   -- See /after/plugin/undotree.lua
   use { "mbbill/undotree" }
 
-  -- Perform git commands from within VIM without
-  -- needing to always have a separate
-  -- See /after/plugin/fugitive.lua
-  use { "tpope/vim-fugitive" }
+  -- Git for lazy people like me
+  use { "kdheepak/lazygit.nvim" }
+  -- Symbols in the editor that indicate uncommitted changes
+  -- among other things
+
   use { "lewis6991/gitsigns.nvim" }
 
   -- The whole apparatus for supporting working with code
