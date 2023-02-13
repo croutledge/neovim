@@ -1,11 +1,6 @@
 vim.g.mapleader = " "
 
 local keymap = vim.keymap.set
--- Move a selection up and down (and indent too)
--- Commented out - these are taken care of by Alt+j/k to avoid
--- weird typing conflicts
-keymap("v", "J", ":m '>+1<CR>gv=gv")
-keymap("v", "K", ":m '<-2<CR>gv=gv")
 
 -- In normal mode allow moving a line up onto the prior
 -- line but don't send the cursor to the end of the above line
@@ -51,9 +46,15 @@ keymap("n", "<C-Right>", ":vertical resize +2<CR>", { silent=true, desc="Vertica
 -- Easier escape from insert mode
 keymap("i", "jk", "<ESC>", { silent=true, desc="Exit insert mode" })
 
--- Easier indents (Shift + < or >)
+-- Easier indents in visual mode (Shift + < or >)
 keymap("v", "<", "<gv", { silent=true, desc="Exit insert mode" })
 keymap("v", ">", ">gv", { silent=true, desc="Exit insert mode" })
+
+-- Move a selection up and down (and indent too)
+-- Commented out - these are taken care of by Alt+j/k to avoid
+-- weird typing conflicts
+keymap("v", "J", ":m '>+1<CR>gv=gv")
+keymap("v", "K", ":m '<-2<CR>gv=gv")
 
 -- Move lines in normal and visual modes with Alt
 -- Visual mode movement allows block moves
