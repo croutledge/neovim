@@ -16,4 +16,4 @@ require("bufferline").setup({
 -- Quickly cycle through each buffer tab
 vim.keymap.set("n", "<leader>h", ":BufferLineCyclePrev<CR>", { silent=true, desc="Next Buffer" })
 vim.keymap.set("n", "<leader>l", ":BufferLineCycleNext<CR>", { silent=true, desc="Previous Buffer" })
-
+vim.keymap.set("n", "<leader>bfp", ":BufferLineTogglePin<CR>", { silent=true, desc="Toggle Buffer Pin" })
