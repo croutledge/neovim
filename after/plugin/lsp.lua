@@ -10,7 +10,7 @@ require('mason-lspconfig').setup({
     'html',
     'pyright',
     'yamlls',
-    'sumneko_lua'
+    'lua_ls'
   }
 })
 

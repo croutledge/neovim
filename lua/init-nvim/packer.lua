@@ -65,6 +65,8 @@ return require("packer").startup(function(use)
   -- See /after/plugin/undotree.lua
   use { "mbbill/undotree" }
 
+  use { 'tpope/vim-fugitive' }
+
   -- Git for lazy people like me
   use { "kdheepak/lazygit.nvim" }
   -- Symbols in the editor that indicate uncommitted changes
@@ -158,4 +160,7 @@ return require("packer").startup(function(use)
 
   -- Navigate faster to where you want to go
   use { "ggandor/leap.nvim" }
+  use {
+    'rmagatti/auto-session',
+  }
 end)
