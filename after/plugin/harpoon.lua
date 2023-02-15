@@ -4,7 +4,7 @@ local ui  = require('harpoon.ui')
 
 vim.keymap.set("n", "<leader>a", mark.toggle_file, { silent=true, desc="Harpoon File" })
 vim.keymap.set("n", "<C-e>", ui.toggle_quick_menu, { silent=true, desc="Toggle Harpoon" })
-vim.keymap.set("n", "A", mark.clear_all, { silent=true, desc="Clear All Harpoons" })
+vim.keymap.set("n", "<leader>da", mark.clear_all, { silent=true, desc="Clear All Harpoons" })
 -- vim.keymap.set("n", "<C-h>", function() ui.nav_file(1) end)
 -- vim.keymap.set("n", "<C-t>", function() ui.nav_file(2) end)
 -- vim.keymap.set("n", "<C-n>", function() ui.nav_file(3) end)

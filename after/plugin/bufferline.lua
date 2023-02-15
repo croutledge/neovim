@@ -9,7 +9,11 @@ require("bufferline").setup({
           highlight = "Directory",
           separator = true -- use a "true" to enable the default, or set your own character
        }
-    }
+    },
+    indicator = {
+      style = 'underline',
+    },
+    show_tab_indicators = true,
   }
 })
 
