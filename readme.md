@@ -112,4 +112,5 @@ Visually see and navigate through your document changes visually
 ### [Vimwiki](https://github.com/vimwiki/vimwiki)
 Instead of yet-another app to structure and take notes Vimwiki can be accessed and navigated from within Vim at any point
 
-
+### [Auto Session](https://github.com/rmagatti/auto-session)
+Saves the state of your session based on your CWD

@@ -63,5 +63,9 @@ keymap("n", "<A-k>", ":m .-2<CR>==", { silent=true, desc="Move Line Up" }) -- mo
 keymap("v", "<A-j>", ":m '>+1<CR>gv=gv", { silent=true, desc="Move Line Down" }) -- move line up(v)
 keymap("v", "<A-k>", ":m '<-2<CR>gv=gv", { silent=true, desc="Move Line Up" }) -- move line down(v)
 
+keymap("n", "<C-b><C-b>", ":%bd|e#<CR>", { silent=true, desc="Close all but current buffer" })
+
+keymap("n", "<C-h><C-l>", ":noh<CR>", { silent=true, desc="Clear search highlights" })
+
 -- if you only want these mappings for toggle term use term://*toggleterm#* instead
 vim.cmd('autocmd! TermOpen term://* lua set_terminal_keymaps()')
